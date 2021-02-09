@@ -17,7 +17,7 @@ I did intent to alter these colours to match the branding but ran out of time to
 
 I really enjoyed doing this test as it push me to think on the fly, so I wanted to thank you for giving me the oppotunity to try this test. 
 
-If you have any feedback for me please let me know. 
+If you have any feedback or issues please let me know. 
 
 Best Regards,
 Robert Evans
