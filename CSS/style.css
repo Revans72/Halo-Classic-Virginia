@@ -1,0 +1,22 @@
+body{
+    font-family: 'Open Sans';
+    color: #333333;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.divider{
+    border-top: 1px solid #FF8E0E;
+  }
+
+.btn-primary{
+    background-color: #FF8E0E;
+    border-color: #FF8E0E;
+}
+
+.btn-primary:hover{
+    background-color: #FF8E0E;
+    border-color: #FF8E0E;
+}
