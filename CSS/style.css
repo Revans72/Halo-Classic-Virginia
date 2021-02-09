@@ -4,7 +4,7 @@ body{
 }
 
 .price{
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .divider{
@@ -19,4 +19,42 @@ body{
 .btn-primary:hover{
     background-color: #FF8E0E;
     border-color: #FF8E0E;
+}
+
+#bold{
+    font-weight: 1000;
+}
+
+.accordion-item{
+    border-color: #FF8E0E;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #333333;
+    background-color: #FF8E0E;
+}
+
+#qty-box{
+    width: 3rem;
+}
+
+#qty{
+    margin-bottom: 1rem;
+}
+
+#strength{
+    margin-bottom: 1rem;
+}
+
+.prod{
+    width: 18rem;
+    margin: auto;
+}
+
+.carousel-control-prev-icon{
+    background-color: #FF8E0E;
+}
+
+.carousel-control-next-icon{
+    background-color: #FF8E0E;
 }

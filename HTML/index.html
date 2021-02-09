@@ -1,125 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Virginia</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-</head>
-<body>
-    <div class="container">
-            <div class="row" id="product-main">
-              <div class="col">
-                  <img src="https://www.ecigarettedirect.co.uk/media/catalog/product/cache/2/image/450x/9df78eab33525d08d6e5fb8d27136e95/c/l/classic_virginia_06.jpg" alt="Halo-Classic-Virginia">
-              </div>
-              <div class="col">
-                  <h3>Classic Virginia</h3>
-                  <p>by Halo Vapour Co.</p>
-                  <p class="price">£3.99</p>
-                  <p>In Stock</p>
-                  <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="liquid-strength" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Choose an Option...
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="liquid-strength">
-                      <a class="dropdown-item">1.8%</a>
-                      <a class="dropdown-item">1.2%</a>
-                      <a class="dropdown-item">0.6%</a>
-                      <a class="dropdown-item">0.3%</a>
-                      <a class="dropdown-item">0.0%</a>
-                    </div>
-                    <button type="button" class="btn btn-primary">Add to Basket</button>
-                </div>
-              </div>
-              <div class="w-100">
-                <hr class="divider">
-              </div>
-              <div class="col">
-                  <p id="desc">
-                    Our Classic Virginia e-liquid delivers the quintessential taste of hand-rolled  tobacco, and boasts a complex oriental flavour profile that discerning vapers  will love. Its deep, spicy flavours work fantastically with the brighter, zesty  top notes, and give the overall impression of an aromatic, sun-ripened  tobacco blend. Nicotine salts version also available.
-                  </p>
-              </div>
-              <div class="col">
-                <ul>
-                    <li>3 for £9.99</li>
-                    <li>UK Made and Tested by a Government Approved Lab - Find out more</li>
-                    <li>UK Sourced Ingredients, Pharma Grade Nicotine</li>
-                    <li>Rich Flavour Profile</li>
-                    <li>VG:PG 50:50 Ratio</li>
-                </ul>
-              </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Classic Virginia</title>
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="../CSS/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row" id="product-main">
+            <div class="col">
+               <img src="https://www.ecigarettedirect.co.uk/media/catalog/product/cache/2/image/450x/9df78eab33525d08d6e5fb8d27136e95/c/l/classic_virginia_06.jpg" alt="Halo-Classic-Virginia">
+            </div>
+            <div class="col">
+               <h3>Classic Virginia</h3>
+               <p>by Halo Vapour Co.</p>
+               <p class="price">£3.99</p>
+               <p>In Stock</p>
+               <div id="strength">
+                  <label for="Strength">Select Strength:</label>
+                  <select name="Strength">
+                     <option value="1.8">1.8%</option>
+                     <option value="1.2">1.2%</option>
+                     <option value="0.6">0.6%</option>
+                     <option value="0.3">0.3%</option>
+                     <option value="0.0">0.0%</option>
+                  </select>
+               </div>
+               <div id="qty">
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" id="qty-box" name="quantity" value="1" min="1" maxlength="12">
+               </div>
             </div>
             <div class="w-100">
-                <hr class="divider">
+               <hr class="divider">
+            </div>
+            <div class="col">
+               <p id="desc">
+                  Our Classic Virginia e-liquid delivers the quintessential taste of hand-rolled  tobacco, and boasts a complex oriental flavour profile that discerning vapers  will love. Its deep, spicy flavours work fantastically with the brighter, zesty  top notes, and give the overall impression of an aromatic, sun-ripened  tobacco blend. Nicotine salts version also available.
+               </p>
+            </div>
+            <div class="col">
+               <ul>
+                  <li>3 for £9.99</li>
+                  <li>UK Made and Tested by a Government Approved Lab - Find out more</li>
+                  <li>UK Sourced Ingredients, Pharma Grade Nicotine</li>
+                  <li>Rich Flavour Profile</li>
+                  <li>VG:PG 50:50 Ratio</li>
+               </ul>
+            </div>
+         </div>
+         <div class="w-100">
+            <hr class="divider">
+         </div>
+         <div class="row">
+        <h3>Alternate Products</h3>
+         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card prod">
+                    <div class="card-body">
+                       <img src="https://www.ecigarettedirect.co.uk/media/catalog/product/h/a/halo-uk-eliquid-blackcurrant-bomb.jpg" class="card-img-top" alt="blackberry bomb">
+                       <h6 class="card-subtitle mb-2 text-muted">Halo Vapour Co.</h6>
+                       <p class="card-text">Blackcurrant Bomb</p>
+                       <p class="price">£3.99</p>
+                    </div>
+                 </div>
               </div>
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Description
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        EXCEPTIONAL E-LIQUIDS. UK MADE AND TESTED. 
-                        Established in 2008, Halo Vapour Co. is one of the UK’s original and best e liquid brands. Following 12 years of development, evolution and  improvement, the range you see today today sits comfortably amongst the  most respected vape juices. 
-                        With over 10 million bottles sold to date, Halo Vapour Co. flavours are loved  by vapers around the world. The 50:50 VG:PG ratio makes it perfect for  vapers who prioritise great flavour over big showy clouds. 
-                        Manufactured at a state of the art factory in the UK, using a combination of  pharmaceutical grade nicotine and premium quality EU sourced ingredients.  Halo Vapour Co. goes above and beyond the quality required by legislation,  meeting and exceeding vapers expectations in every way.
+              <div class="carousel-item">
+                <div class="card prod">
+                    <div class="card-body">
+                        <img src="https://www.ecigarettedirect.co.uk/media/catalog/product/m/e/menthol_blast_06.jpg" class="card-img-top" alt="Menthol Blast">
+                        <h6 class="card-subtitle mb-2 text-muted">Halo Vapour Co.</h6>
+                        <p class="card-text">Menthol Blast</p>
+                        <p class="price">£3.99</p>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Reviews
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                       
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Delivery and Returns
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <h3>HASSLE FREE RETURNS PLUS FREE DELIVERY ON ORDERS OVER £15</h3>
-                        <h5>Delivery Prices and Speeds </h5>
-                        <p>Due to the current Covid-19 pandemic, Royal Mail are dealing with both huge demand and staff shortages. Our postal workers are doing a tremendous job despite this, but please be aware that  from time to time deliveries may take a little longer than usual.</p>
-                        <!-- Option Price Speed Features 
-                        Royal Mail 24 £2.99 or FREE for orders over £15 1-7 working days if purchase completed  before 5pm. 
-                        Parcels ship Monday - Friday excluding bank holidays. 95% of orders arrive next day. Orders over £100.00 are sent Royal Mail Tracked 24 and require a signature. 
-                        Royal Mail Tracked 24 £4.99 or £1.99 for orders between £15 to £100 or FREE for orders over £100 Next working day. 
-                        Parcels ship Monday - Friday excluding bank holidays. 
-                        Tracked - signature required. 
-                        Unfortunately, we can no longer deliver to EU addresses outside the UK due to new EU regulations.  -->
-                        
-                        <h3>HASSLE-FREE RETURNS - & 90 DAYS TO CHANGE YOUR MIND</h3>
-                        <p>Need to return an item? We aim to make the process as easy as possible (it’s also free!) 
-                        just send an email to our friendly customer service team on support@ecigarettedirect.co.uk, give us a call on 01792 852843 or contact us on chat.</p>
-                        
-                        <h5>When can I make a return?</h5>
-                        <p>When you have an unwanted present or have changed your mind - you’ve got 90 days to decide!  Please note this only applies when you have not used the product, and it is in a resalable condition.</p>  
-                            <ul>
-                                <li>You have a faulty product under warranty.</li>
-                                <li>You can see our full returns policy in our terms and conditions.</li>
-                            </ul>
-                        <h5>Not in the UK? </h5>
-                        <p>You can see the full list of countries we deliver to here.</p>                        
-                    </div>
-                  </div>
-                </div>
+                 </div>
               </div>
+              <div class="carousel-item">
+                <div class="card prod">
+                    <div class="card-body">
+                        <img src="https://www.ecigarettedirect.co.uk/media/catalog/product/a/m/american_red_06.jpg" class="card-img-top" alt="American Red">
+                        <h6 class="card-subtitle mb-2 text-muted">Halo Vapour Co.</h6>
+                        <p class="card-text">American Red</p>
+                        <p class="price">£3.99</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card prod">
+                    <div class="card-body">
+                        <img src="https://www.ecigarettedirect.co.uk/media/catalog/product/a/p/apple_apricot_06.jpg" class="card-img-top" alt="Apple and Apricot">
+                        <h6 class="card-subtitle mb-2 text-muted">Halo Vapour Co.</h6>
+                        <p class="card-text">Apple and Apricot</p>
+                        <p class="price">£3.99</p>
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+
+        </div>
+
+         <div class="w-100">
+            <hr class="divider">
+         </div>
+         <div class="accordion" id="addInfo">
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Description
+                  </button>
+               </h2>
+               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#addInfo">
+                  <div class="accordion-body">
+                     EXCEPTIONAL E-LIQUIDS. UK MADE AND TESTED. 
+                     Established in 2008, Halo Vapour Co. is one of the UK’s original and best e liquid brands. Following 12 years of development, evolution and  improvement, the range you see today today sits comfortably amongst the  most respected vape juices. 
+                     With over 10 million bottles sold to date, Halo Vapour Co. flavours are loved  by vapers around the world. The 50:50 VG:PG ratio makes it perfect for  vapers who prioritise great flavour over big showy clouds. 
+                     Manufactured at a state of the art factory in the UK, using a combination of  pharmaceutical grade nicotine and premium quality EU sourced ingredients.  Halo Vapour Co. goes above and beyond the quality required by legislation,  meeting and exceeding vapers expectations in every way.
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Reviews
+                  </button>
+               </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#addInfo">
+                  <div class="accordion-body">
+                     <div class="card review">
+                        <div class="card-body">
+                           <h5 class="card-title">5 out of 5</h5>
+                           <h6 class="card-subtitle mb-2 text-muted">John Williams, 7th February 2021</h6>
+                           <p class="card-text">Excellent as always. Favourite product</p>
+                        </div>
+                     </div>
+                     <div class="card review">
+                        <div class="card-body">
+                           <h5 class="card-title">3 out of 5</h5>
+                           <h6 class="card-subtitle mb-2 text-muted">Anne Smith, 6th February 2021</h6>
+                           <p class="card-text">
+                                I bought the last pockex for my  
+                                husband, so the liquid was for him. It wasn't the same flavour that  
+                                he was used to & he wouldn't order it  
+                                again, but that's down to his personal choice only.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card review">
+                        <div class="card-body">
+                           <h5 class="card-title">4 out of 5</h5>
+                           <h6 class="card-subtitle mb-2 text-muted">Lowri Coleman, 6th February 2021</h6>
+                           <p class="card-text">
+                                I’m happy with these and don’t want to change.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card review">
+                        <div class="card-body">
+                           <h5 class="card-title">5 out of 5</h5>
+                           <h6 class="card-subtitle mb-2 text-muted">Douglas Sheppard, 3rd February 2021</h6>
+                           <p class="card-text">
+                                Halo 18mg 10ml classic Virginia vape oil has really helped me stop puffing on nasty ciggies! 
+                                I love it, it gives me the nicotine fix I need without the negative health issues!
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card review">
+                        <div class="card-body">
+                           <h5 class="card-title">5 out of 5</h5>
+                           <h6 class="card-subtitle mb-2 text-muted">Amanda Green, 31st January 2021</h6>
+                           <p class="card-text">
+                                A great product, wonderful value for  the money.
+                            </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Delivery and Returns
+                  </button>
+               </h2>
+               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#addInfo">
+                  <div class="accordion-body">
+                     <h3>HASSLE FREE RETURNS PLUS FREE DELIVERY ON ORDERS OVER £15</h3>
+                     <h5>Delivery Prices and Speeds </h5>
+                     <p>Due to the current Covid-19 pandemic, Royal Mail are dealing with both huge demand and staff shortages. Our postal workers are doing a tremendous job despite this, but please be aware that  from time to time deliveries may take a little longer than usual.</p>
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th scope="col">Option</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Speed</th>
+                              <th scope="col">Features</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Royal Mail 24</td>
+                              <td>£2.99 or FREE for orders over £15</td>
+                              <td>
+                                 1-7 working days if purchase completed  before 5pm. 
+                                 Parcels ship Monday - Friday excluding bank holidays. 95% of orders arrive next day.
+                              </td>
+                              <td>Orders over £100.00 are sent Royal Mail Tracked 24 and require a signature.</td>
+                           </tr>
+                           <tr>
+                              <td>Royal Mail Tracked 24</td>
+                              <td>£4.99 or £1.99 for orders between £15 to £100 or FREE for orders over £100</td>
+                              <td>Next working day. 
+                                 Parcels ship Monday - Friday excluding bank holidays.
+                              </td>
+                              <td>Tracked - signature required.</td>
+                           </tr>
+                           <tr>
+                              <td colspan="4">Unfortunately, we can no longer deliver to EU addresses outside the UK due to new EU regulations.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <h3>HASSLE-FREE RETURNS - & 90 DAYS TO CHANGE YOUR MIND</h3>
+                     <p>Need to return an item? We aim to make the process as easy as possible (it’s also free!) 
+                        just send an email to our friendly customer service team on support@ecigarettedirect.co.uk, give us a call on 01792 852843 or contact us on chat.
+                     </p>
+                     <h5>When can I make a return?</h5>
+                     <p>When you have an unwanted present or have changed your mind - you’ve got 90 days to decide!  Please note this only applies when you have not used the product, and it is in a resalable condition.</p>
+                     <ul>
+                        <li>You have a faulty product under warranty.</li>
+                        <li>You can see our full returns policy in our terms and conditions.</li>
+                     </ul>
+                     <h5>Not in the UK? </h5>
+                     <p>You can see the full list of countries we deliver to here.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-</body>
+   </body>
 </html>
