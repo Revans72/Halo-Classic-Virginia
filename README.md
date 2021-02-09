@@ -7,9 +7,9 @@ The main content of the page is within the container div with the id of 'main'.
 
 So the header and footer will go above and below this. 
 
-Please include all the links in the head tag in the order they appear in the code, my custom style sheet being last. 
+Please include all the links in the head tag in the order they appear in the code, my custom style sheet being last as well as the CSS folder with my custom stylesheet.
 
-For full disclosure I did go about 20mins over the 3hr time due to validation fixes and some styling fixes I wanted to make. 
+For full disclosure I did go over the 3hr time due to validation fixes and some styling fixes I wanted to make. 
 
 I kept the colours to the ones specified in the test doc. The only colours the are diffrent are the focus border on buttons and the arrow for the accordian buttons which are the default bootstrap colours. 
 
