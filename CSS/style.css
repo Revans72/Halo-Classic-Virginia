@@ -58,3 +58,8 @@ body{
 .carousel-control-next-icon{
     background-color: #FF8E0E;
 }
+
+#prodcutImg{
+    max-width: 450px;
+    max-height: 450px;
+}

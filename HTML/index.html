@@ -12,10 +12,10 @@
       <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
    </head>
    <body>
-      <div class="container">
+      <div class="container" id="main">
          <div class="row" id="product-main">
             <div class="col">
-               <img src="https://www.ecigarettedirect.co.uk/media/catalog/product/cache/2/image/450x/9df78eab33525d08d6e5fb8d27136e95/c/l/classic_virginia_06.jpg" alt="Halo-Classic-Virginia">
+               <img id="prodcutImg" src="https://www.ecigarettedirect.co.uk/media/catalog/product/c/l/classic_virginia_06.jpg" alt="Halo-Classic-Virginia">
             </div>
             <div class="col">
                <h3>Classic Virginia</h3>
@@ -23,8 +23,8 @@
                <p class="price">£3.99</p>
                <p>In Stock</p>
                <div id="strength">
-                  <label for="Strength">Select Strength:</label>
-                  <select name="Strength">
+                  <label for="str-box">Select Strength:</label>
+                  <select name="Strength" id="str-box">
                      <option value="1.8">1.8%</option>
                      <option value="1.2">1.2%</option>
                      <option value="0.6">0.6%</option>
@@ -33,8 +33,8 @@
                   </select>
                </div>
                <div id="qty">
-                  <label for="quantity">Quantity:</label>
-                  <input type="number" id="qty-box" name="quantity" value="1" min="1" maxlength="12">
+                  <label for="qty-box">Quantity:</label>
+                  <input type="number" id="qty-box" name="quantity" value="1" min="1">
                </div>
             </div>
             <div class="w-100">
